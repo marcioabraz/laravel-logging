@@ -16,7 +16,6 @@ class UserController extends Controller
     {
         $num1 = $request->num1;
         $num2 = $request->num2;
-        $text = "['num1' => $num1, 'num2' => $num2, 'sub' => {a subtração dos números}]";
-        logger()->debug('Sub feita'.$text);
+        logger()->debug("Sub feita['num1' => $num1, 'num2' => $num2, 'sub' => {a subtração dos números}]");
     }
 }
