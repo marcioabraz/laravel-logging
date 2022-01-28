@@ -11,6 +11,6 @@ class UserController extends Controller
     public function somar($num1, $num2)
     {
         $result = $num1+$num2;
-        logger()->info('Soma Feita'.$result);
+        logger()->info('Soma feita'.$result);
     }
 }
