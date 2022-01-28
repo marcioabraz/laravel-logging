@@ -18,12 +18,12 @@ Route::get('/', function () {
     logger()->info('Alguém acesso o site!');
     logger()->debug('Alguém acesso o site!');
     logger()->error('Deu erro?');
+    logger()->debug("Sub feita['num1' => $num1, 'num2' => $num2, 'sub' => {a subtração dos números}]");
     return view('welcome');
 });
 
 Route::get('/soma/{num1}/{num2}', [UserController::class, 'somar']);
+Route::get('/sub/{num1}/{num2}', [UserController::class, 'sub']);
 
-Route::get('/sub/{num1}/{num2}',function () {
-    logger()->debug("Sub feita ['num1' => $num1, 'num2' => $num2, 'sub' => {a subtração dos números}]");
-    return view('welcome');
-});
+
+
