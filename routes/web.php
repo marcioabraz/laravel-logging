@@ -22,3 +22,8 @@ Route::get('/', function () {
 });
 
 Route::get('/soma/{num1}/{num2}', [UserController::class, 'somar']);
+
+Route::get('/sub/{num1}/{num2}',function () {
+    logger()->debug("Sub feita ['num1' => $num1, 'num2' => $num2, 'sub' => {a subtração dos números}]");
+    return view('welcome');
+});
