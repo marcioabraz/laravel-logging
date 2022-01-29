@@ -25,5 +25,5 @@ Route::get('/', function () {
 Route::get('/soma/{num1}/{num2}', [UserController::class, 'somar']);
 Route::get('/sub/{num1}/{num2}', [UserController::class, 'sub']);
 
-
+Route::get('/div/{num1}/{num2}', [UserController::class, 'div']);
 
