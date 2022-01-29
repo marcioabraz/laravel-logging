@@ -27,3 +27,4 @@ Route::get('/sub/{num1}/{num2}', [UserController::class, 'sub']);
 
 Route::get('/div/{num1}/{num2}', [UserController::class, 'div']);
 
+Route::get('/mult/{num1}/{num2}', [UserController::class, 'mult']);

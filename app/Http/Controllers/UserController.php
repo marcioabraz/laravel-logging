@@ -31,4 +31,14 @@ class UserController extends Controller
         return $num1 / $num2;
 
     }
+    public function mult(Request $request)
+    {
+        $num1 = $request->num1;
+        $num2 = $request->num2;
+        if ($num2<0 || $num1<0 ){
+            logger()->WARNING('Negativo');
+        }
+        return $num1 * $num2;
+
+    }
 }
