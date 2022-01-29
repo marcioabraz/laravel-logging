@@ -25,9 +25,10 @@ class UserController extends Controller
         $num1 = $request->num1;
         $num2 = $request->num2;
         if ($num2==0){
-            logger()->error('Divisor zero!');
+            logger()->Error('Divisor zero!');
             return false;
         }
+        logger()->info('Div feita');
         return $num1 / $num2;
 
     }
